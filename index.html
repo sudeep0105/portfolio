@@ -1,139 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>K Venkata Sudeep | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>K Venkata Sudeep — Full Stack Java Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
-    <header>
-        <nav class="container">
-            <div class="logo">KVS</div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#project-detail">Project</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<!-- ── NAV ── -->
+<header>
+  <nav class="container">
+    <div class="logo">KVS · Portfolio</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Project</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-    <main id="home">
-        <section class="hero">
-            <div class="container">
-                <h1>Hi, I'm <span class="highlight">K Venkata Sudeep</span></h1>
-                <p id="animated-subtitle" class="subtitle-text"></p>
-                <div class="hero-btns">
-                    <a href="#project-detail" class="btn-primary">View My Work</a>
-                    <a href="#contact" class="btn-secondary">Let's Talk</a>
-                </div>
-            </div>
-        </section>
+<!-- ── HERO ── -->
+<section id="home">
+  <div class="container hero-inner">
+    <p class="hero-eyebrow">Available for hire · 2025 Graduate</p>
+    <h1 class="hero-name">K Venkata<br/><em>Sudeep</em></h1>
+    <p class="hero-role">// Full Stack Java Developer</p>
+    <p class="hero-desc">
+      Computer Science graduate specializing in Java, JDBC, and scalable backend systems.
+      Passionate about writing clean, maintainable code and solving real-world problems.
+    </p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-dark">View My Work</a>
+      <a href="#contact" class="btn btn-ghost">Let's Talk</a>
+    </div>
+  </div>
+  <div class="scroll-hint">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
 
-        <section id="about" class="about-section">
-            <div class="container">
-                <h2 class="section-title">About Me</h2>
-                <div class="about-flex">
-                    <div class="about-text">
-                        <p>
-                            Motivated and detail-oriented Computer Science graduate with a strong foundation in programming and software development. Seeking an <strong>Entry-level</strong> position in the IT industry to apply my skills, contribute to real-world projects, and grow as a professional.
-                        </p>
-                        
-                        <h4 class="expertise-heading">Technical Expertise</h4>
-                        <ul class="skills-list">
-                            <li><strong>Backend:</strong> Java, JDBC</li>
-                            <li><strong>Frontend:</strong> HTML, CSS, JavaScript</li>
-                            <li><strong>Database:</strong> MySQL</li>
-                            <li><strong>ML:</strong> Python, Scikit-Learn</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="education" class="education-section">
-            <div class="container">
-                <h2 class="section-title">Education</h2>
-                
-                <div class="education-card">
-                    <div class="edu-info">
-                        <h3>Bachelor of Technology (B.Tech)</h3>
-                        <p class="institution">Annamacharya Institute of Technology and Sciences, Tirupati</p>
-                        <p class="location">Tirupati, Andhra Pradesh</p>
-                    </div>
-                    <div class="edu-date"><span class="year-tag">2021 - 2025</span></div>
-                </div>
-
-                <div class="education-card">
-                    <div class="edu-info">
-                        <h3>Intermediate (12th Grade)</h3>
-                        <p class="institution">Sri Gayathri Junior College</p>
-                        <p class="location">Tirupati, Andhra Pradesh</p>
-                    </div>
-                    <div class="edu-date"><span class="year-tag">2019 - 2021</span></div>
-                </div>
-
-                <div class="education-card">
-                    <div class="edu-info">
-                        <h3>Secondary School (10th Grade)</h3>
-                        <p class="institution">Rayalaseema Public School</p>
-                        <p class="location">Tirupati, Andhra Pradesh</p>
-                    </div>
-                    <div class="edu-date"><span class="year-tag">Completed 2019</span></div>
-                </div>
-            </div>
-        </section>
-
-        <section id="project-detail">
-            <div class="container">
-                <div class="case-study">
-                    <header class="project-header">
-                        <div class="project-badges">
-                            <span class="tag">Machine Learning</span>
-                            <span class="tag">Healthcare Tech</span>
-                        </div>
-                        <h2>Classification of Sleep Patterns & Disorders</h2>
-                    </header>
-                    <div class="project-grid">
-                        <div class="project-main">
-                            <h3>The Challenge</h3>
-                            <p>Traditional sleep diagnostic methods like Polysomnography (PSG) are often inconvenient and expensive. This project uses machine learning to classify disorders from lifestyle data.</p>
-                            <h3>Technical Approach</h3>
-                            <p>Implemented <strong>Ensemble Learning</strong> (Stacking and Voting Classifiers) to enhance diagnostic robustness.</p>
-                        </div>
-                        <div class="project-sidebar">
-                            <div class="sidebar-card">
-                                <h4>Tech Stack</h4>
-                                <ul>
-                                    <li>Python</li>
-                                    <li>Scikit-Learn</li>
-                                    <li>Pandas / NumPy</li>
-                                </ul>
-                            </div>
-                            <a href="https://github.com/sudeep0105/Machine-learning-based-classification-of-sleep-patterns-and-disorders.git" target="_blank" class="btn-primary full-width">View Source Code</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer id="contact">
-        <div class="container">
-            <h2>Get In Touch</h2>
-            <div class="social-links">
-                <a href="mailto:sudeepkami22@gmail.com">Email</a>
-                <a href="https://github.com/sudeep0105" target="_blank">GitHub</a>
-                <a href="https://www.linkedin.com/in/k-venkata-sudeep-043220380">LinkedIn</a>
-            </div>
-            <p class="copyright">&copy; 2025 K Venkata Sudeep.</p>
+<!-- ── ABOUT ── -->
+<section id="about" class="section">
+  <div class="container">
+    <p class="sec-label">01 — About</p>
+    <h2 class="sec-title">Who I Am</h2>
+    <div class="about-layout">
+      <div class="about-body">
+        <p>
+          Motivated and detail-oriented <strong>Computer Science graduate (B.Tech, 2025)</strong>
+          with a strong foundation in programming and software development.
+        </p>
+        <p>
+          I'm seeking an <strong>entry-level position</strong> in the IT industry to apply my skills,
+          contribute to real-world projects, and grow alongside experienced engineering teams.
+          I care deeply about writing code that is readable, efficient, and built to last.
+        </p>
+        <p>
+          My academic work spans backend systems with Java &amp; JDBC, frontend interfaces,
+          relational databases, and machine learning — giving me a well-rounded perspective
+          on the full development lifecycle.
+        </p>
+      </div>
+      <div class="skills-panel">
+        <h4>Technical Stack</h4>
+        <div class="skill-group">
+          <p class="skill-group-label">Backend</p>
+          <div class="skill-pills">
+            <span class="pill">Java</span>
+            <span class="pill">JDBC</span>
+            <span class="pill">Spring Boot</span>
+          </div>
         </div>
-    </footer>
+        <div class="skill-group">
+          <p class="skill-group-label">Frontend</p>
+          <div class="skill-pills">
+            <span class="pill">HTML</span>
+            <span class="pill">CSS</span>
+            <span class="pill">JavaScript</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <p class="skill-group-label">Database</p>
+          <div class="skill-pills">
+            <span class="pill">MySQL</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <p class="skill-group-label">ML / Data</p>
+          <div class="skill-pills">
+            <span class="pill">Python</span>
+            <span class="pill">Scikit-Learn</span>
+            <span class="pill">Pandas</span>
+            <span class="pill">NumPy</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <script src="script.js"></script>
+<!-- ── EDUCATION ── -->
+<section id="education" class="section">
+  <div class="container">
+    <p class="sec-label">02 — Education</p>
+    <h2 class="sec-title">Academic Background</h2>
+    <div class="edu-list">
+      <div class="edu-row">
+        <div>
+          <p class="edu-degree">Bachelor of Technology — Computer Science</p>
+          <p class="edu-inst">Annamacharya Institute of Technology and Sciences</p>
+          <p class="edu-loc">Tirupati, Andhra Pradesh</p>
+        </div>
+        <div class="edu-year">2021 – 2025</div>
+      </div>
+      <div class="edu-row">
+        <div>
+          <p class="edu-degree">Intermediate · 12th Grade</p>
+          <p class="edu-inst">Sri Gayathri Junior College</p>
+          <p class="edu-loc">Tirupati, Andhra Pradesh</p>
+        </div>
+        <div class="edu-year">2019 – 2021</div>
+      </div>
+      <div class="edu-row">
+        <div>
+          <p class="edu-degree">Secondary School · 10th Grade</p>
+          <p class="edu-inst">Rayalaseema Public School</p>
+          <p class="edu-loc">Tirupati, Andhra Pradesh</p>
+        </div>
+        <div class="edu-year">Completed 2019</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PROJECT ── -->
+<section id="projects" class="section">
+  <div class="container">
+    <p class="sec-label">03 — Project</p>
+    <h2 class="sec-title">Featured Work</h2>
+    <div class="project-card">
+      <div class="proj-tags">
+        <span class="proj-tag">Machine Learning</span>
+        <span class="proj-tag">Healthcare Tech</span>
+      </div>
+      <h3 class="proj-title">Classification of Sleep Patterns &amp; Disorders</h3>
+      <div class="proj-body">
+        <div>
+          <p class="proj-section-head">The Challenge</p>
+          <p class="proj-text">
+            Traditional sleep diagnostic methods like Polysomnography (PSG) are often inconvenient
+            and expensive for patients. This project explores using machine learning to classify
+            sleep disorders directly from health and lifestyle data sourced from Kaggle —
+            making diagnosis more accessible.
+          </p>
+          <p class="proj-section-head">Technical Approach</p>
+          <p class="proj-text">
+            Implemented <strong>Ensemble Learning</strong> techniques — specifically
+            <strong>Stacking</strong> and <strong>Voting Classifiers</strong> — to enhance
+            prediction accuracy and model robustness. This outperformed single-model baselines
+            like KNN and SVM by leveraging the strengths of multiple learners.
+          </p>
+        </div>
+        <div>
+          <div class="proj-sidebar-card">
+            <h4>Tech Stack</h4>
+            <div class="tech-list">
+              <div class="tech-item">Python</div>
+              <div class="tech-item">Scikit-Learn</div>
+              <div class="tech-item">Pandas</div>
+              <div class="tech-item">NumPy</div>
+            </div>
+          </div>
+          <a href="https://github.com/sudeep0105/Machine-learning-based-classification-of-sleep-patterns-and-disorders"
+             target="_blank" class="btn btn-dark btn-full">
+            View Source Code ↗
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section id="contact" class="section section-dark">
+  <div class="container contact-inner">
+    <p class="sec-label sec-label-light">04 — Contact</p>
+    <h2 class="sec-title sec-title-light">Let's Connect</h2>
+    <p class="contact-sub">
+      Open to entry-level Software Developer roles. If you'd like to connect
+      or have a project in mind, reach out.
+    </p>
+    <a href="mailto:sudeepkami22@gmail.com" class="btn btn-white">
+      sudeepkami22@gmail.com
+    </a>
+    <div class="contact-links">
+      <a href="mailto:sudeepkami22@gmail.com" class="contact-link">Email</a>
+      <a href="https://github.com/sudeep0105" target="_blank" class="contact-link">GitHub</a>
+      <a href="https://www.linkedin.com/in/k-venkata-sudeep-043220380" target="_blank" class="contact-link">LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer class="foot">
+  <p class="foot-copy">&copy; 2025 K Venkata Sudeep — All rights reserved</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
