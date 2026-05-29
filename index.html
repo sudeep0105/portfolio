@@ -69,27 +69,40 @@
       <div class="skills-panel">
         <h4>Technical Stack</h4>
         <div class="skill-group">
-          <p class="skill-group-label">Backend</p>
+          <p class="skill-group-label">Backend Architecture</p>
           <div class="skill-pills">
-            <span class="pill">Java</span>
+            <span class="pill">Java (OOP)</span>
             <span class="pill">JDBC</span>
             <span class="pill">Spring Boot</span>
+            <span class="pill">Hibernate / JPA</span>
           </div>
         </div>
         <div class="skill-group">
-          <p class="skill-group-label">Frontend</p>
+          <p class="skill-group-label">Frontend Interfaces</p>
           <div class="skill-pills">
-            <span class="pill">HTML</span>
-            <span class="pill">CSS</span>
-            <span class="pill">JavaScript</span>
+            <span class="pill">React.js</span>
+            <span class="pill">Vite</span>
+            <span class="pill">JavaScript (ES6+)</span>
+            <span class="pill">HTML5 / CSS3</span>
           </div>
         </div>
         <div class="skill-group">
-          <p class="skill-group-label">Database</p>
+          <p class="skill-group-label">Database & Security</p>
           <div class="skill-pills">
             <span class="pill">MySQL</span>
+            <span class="pill">CORS Configuration</span>
+            <span class="pill">Jakarta Validation</span>
           </div>
         </div>
+        <div class="skill-group">
+          <p class="skill-group-label">ML & Automation</p>
+          <div class="skill-pills">
+            <span class="pill">Python</span>
+            <span class="pill">Scikit-Learn</span>
+            <span class="pill">Pandas / NumPy</span>
+          </div>
+        </div>
+      </div>
         <div class="skill-group">
           <p class="skill-group-label">ML / Data</p>
           <div class="skill-pills">
@@ -139,10 +152,51 @@
 </section>
 
 <!-- ── PROJECT ── -->
+<!-- ── PROJECT ── -->
 <section id="projects" class="section">
   <div class="container">
-    <p class="sec-label">03 — Project</p>
+    <p class="sec-label">03 — Projects</p>
     <h2 class="sec-title">Featured Work</h2>
+
+    <!-- CASE STUDY 1: NETFLIX CLONE -->
+    <div class="project-card" style="margin-bottom: 3rem;">
+      <div class="proj-tags">
+        <span class="proj-tag">Full-Stack Development</span>
+        <span class="proj-tag">Enterprise Architecture</span>
+      </div>
+      <h3 class="proj-title">Full-Stack Netflix Clone Web Application</h3>
+      <div class="proj-body">
+        <div>
+          <p class="proj-section-head">The Challenge</p>
+          <p class="proj-text">
+            Architecting a high-fidelity media streaming platform mock capable of managing asynchronous global state transformations, handling real-time third-party REST metadata pipelines, and establishing secure database connectivity streams.
+          </p>
+          <p class="proj-section-head">Technical Approach</p>
+          <p class="proj-text">
+            Engineered a modular, decoupled architecture pairing a high-speed <strong>React (Vite)</strong> frontend interface with a robust <strong>Java Spring Boot REST API</strong> backend. Implemented data persistence using <strong>Spring Data JPA &amp; Hibernate</strong> over a MySQL database, enforced data validation through Jakarta parameters, and configured tailored CORS security channels. Sourced live high-resolution assets smoothly via asynchronous fetch protocols.
+          </p>
+        </div>
+        <div>
+          <div class="proj-sidebar-card">
+            <h4>Tech Stack</h4>
+            <div class="tech-list">
+              <div class="tech-item">React.js / Vite</div>
+              <div class="tech-item">Spring Boot / Java</div>
+              <div class="tech-item">Hibernate / JPA</div>
+              <div class="tech-item">MySQL Relational DB</div>
+            </div>
+          </div>
+          <a href="https://github.com/sudeep0105/netflix-frontend" target="_blank" class="btn btn-dark btn-full">
+            Frontend Code ↗
+          </a>
+          <a href="https://github.com/sudeep0105/netflix-backend" target="_blank" class="btn btn-ghost btn-full" style="margin-top: 0.5rem; text-align: center; background: transparent;">
+            Backend Code ↗
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CASE STUDY 2: MACHINE LEARNING -->
     <div class="project-card">
       <div class="proj-tags">
         <span class="proj-tag">Machine Learning</span>
@@ -176,6 +230,16 @@
               <div class="tech-item">NumPy</div>
             </div>
           </div>
+          <a href="https://github.com/sudeep0105/Machine-learning-based-classification-of-sleep-patterns-and-disorders"
+             target="_blank" class="btn btn-dark btn-full">
+            View Source Code ↗
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
           <a href="https://github.com/sudeep0105/Machine-learning-based-classification-of-sleep-patterns-and-disorders"
              target="_blank" class="btn btn-dark btn-full">
             View Source Code ↗
