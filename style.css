@@ -664,3 +664,10 @@ nav.container {
     padding: 2rem;
   }
 }
+/* Custom utility override for stacking sidebar project links cleanly */
+.btn-full {
+  display: flex !important;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
