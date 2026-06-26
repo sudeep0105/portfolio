@@ -67,23 +67,3 @@ window.addEventListener('scroll', () => {
     header.style.boxShadow = 'none';
   }
 }, { passive: true });
-
-
-/* ── 5. TYPEWRITER EFFECT ──────────────────────────────────── */
-const heroRole = document.querySelector('.hero-role');
-if (heroRole) {
-  const text = heroRole.textContent.trim();
-  heroRole.textContent = '';
-  
-  let index = 0;
-  function type() {
-    if (index < text.length) {
-      heroRole.textContent += text.charAt(index);
-      index++;
-      setTimeout(type, 100);
-    }
-  }
-  
-  // Start typing after a short delay to align with the rise animation
-  setTimeout(type, 1300);
-}
