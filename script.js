@@ -34,7 +34,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 
 /* ── 3. ACTIVE NAV HIGHLIGHT ───────────────────────────────── */
 const allSections = document.querySelectorAll('section[id]');
-const navLinks    = document.querySelectorAll('.nav-links a');
+const navLinks = document.querySelectorAll('.nav-links a');
 
 function updateActiveNav() {
   let current = '';
