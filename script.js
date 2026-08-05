@@ -67,3 +67,46 @@ window.addEventListener('scroll', () => {
     header.style.boxShadow = 'none';
   }
 }, { passive: true });
+
+
+/* ── 5. TYPEWRITER HERO ROLE ANIMATION ─────────────────────── */
+const roleTextElement = document.getElementById('role-text');
+const roles = [
+  'Full Stack Java Developer',
+  'Spring Boot & React Specialist',
+  'Software Development Engineer'
+];
+
+let roleIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+function typeRole() {
+  if (!roleTextElement) return;
+
+  const currentRole = roles[roleIndex];
+
+  if (isDeleting) {
+    roleTextElement.textContent = currentRole.substring(0, charIndex - 1);
+    charIndex--;
+  } else {
+    roleTextElement.textContent = currentRole.substring(0, charIndex + 1);
+    charIndex++;
+  }
+
+  let typeSpeed = isDeleting ? 40 : 80;
+
+  if (!isDeleting && charIndex === currentRole.length) {
+    typeSpeed = 2200; // Pause at end of word
+    isDeleting = true;
+  } else if (isDeleting && charIndex === 0) {
+    isDeleting = false;
+    roleIndex = (roleIndex + 1) % roles.length;
+    typeSpeed = 400; // Pause before typing next word
+  }
+
+  setTimeout(typeRole, typeSpeed);
+}
+
+// Initialize typewriter animation after hero reveal delay
+setTimeout(typeRole, 1000);
