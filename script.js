@@ -1,6 +1,6 @@
 /* ============================================================
    K Venkata Sudeep — Portfolio Scripts
-   script.js
+   Dark Cyber / Neon Tech Theme
    ============================================================ */
 
 /* ── 1. SCROLL REVEAL ──────────────────────────────────────── */
@@ -40,7 +40,7 @@ function updateActiveNav() {
   let current = '';
 
   allSections.forEach((section) => {
-    if (window.scrollY >= section.offsetTop - 80) {
+    if (window.scrollY >= section.offsetTop - 100) {
       current = section.getAttribute('id');
     }
   });
@@ -57,14 +57,14 @@ window.addEventListener('scroll', updateActiveNav, { passive: true });
 updateActiveNav(); // run once on load
 
 
-/* ── 4. HEADER SHADOW ON SCROLL ────────────────────────────── */
+/* ── 4. HEADER SCROLLED GLASS EFFECT ───────────────────────── */
 const header = document.querySelector('header');
 
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 10) {
-    header.style.boxShadow = '0 2px 20px rgba(0,0,0,0.06)';
+  if (window.scrollY > 20) {
+    header?.classList.add('scrolled');
   } else {
-    header.style.boxShadow = 'none';
+    header?.classList.remove('scrolled');
   }
 }, { passive: true });
 
@@ -94,7 +94,7 @@ function typeRole() {
     charIndex++;
   }
 
-  let typeSpeed = isDeleting ? 40 : 80;
+  let typeSpeed = isDeleting ? 35 : 75;
 
   if (!isDeleting && charIndex === currentRole.length) {
     typeSpeed = 2200; // Pause at end of word
@@ -109,4 +109,18 @@ function typeRole() {
 }
 
 // Initialize typewriter animation after hero reveal delay
-setTimeout(typeRole, 1000);
+setTimeout(typeRole, 800);
+
+
+/* ── 6. INTERACTIVE CARD MOUSE LIGHTING EFFECT ─────────────── */
+const cards = document.querySelectorAll('.skill-card, .project-card, .cert-card, .about-content');
+
+cards.forEach((card) => {
+  card.addEventListener('mousemove', (e) => {
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    card.style.setProperty('--mouse-x', `${x}px`);
+    card.style.setProperty('--mouse-y', `${y}px`);
+  });
+});
