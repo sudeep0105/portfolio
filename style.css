@@ -339,7 +339,9 @@ nav.container {
   font-style: normal;
   background: linear-gradient(135deg, var(--cyan) 0%, #38bdf8 40%, var(--violet-bright) 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
+  color: transparent;
   filter: drop-shadow(0 0 25px rgba(0, 242, 254, 0.3));
 }
 
@@ -1038,10 +1040,28 @@ nav.container {
   color: var(--text-muted);
   transition: all 0.25s ease;
   position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .contact-link:hover {
   color: var(--cyan-bright);
+}
+
+.contact-icon,
+.btn-icon {
+  flex-shrink: 0;
+  transition: transform 0.25s ease;
+}
+
+.contact-link:hover .contact-icon {
+  transform: translateY(-2px);
+  color: var(--cyan-bright);
+}
+
+.btn-white:hover .btn-icon {
+  transform: scale(1.1);
 }
 
 /* ============================================================
