@@ -192,6 +192,18 @@ nav.container {
   gap: 0.6rem;
 }
 
+.logo-img {
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.logo:hover .logo-img {
+  transform: rotate(8deg) scale(1.1);
+  filter: drop-shadow(0 0 8px var(--cyan));
+}
+
 .logo::before {
   content: '';
   width: 8px;
