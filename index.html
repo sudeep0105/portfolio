@@ -16,6 +16,12 @@
 </head>
 
 <body>
+  <!-- Scroll progress indicator -->
+  <div class="scroll-progress" aria-hidden="true"><span id="scroll-progress-bar"></span></div>
+
+  <!-- Cursor glow (desktop pointer only) -->
+  <div class="cursor-glow" id="cursor-glow" aria-hidden="true"></div>
+
   <!-- Ambient Cyber Background Effects -->
   <div class="bg-glow-container" aria-hidden="true">
     <div class="bg-glow glow-cyan"></div>
@@ -30,7 +36,7 @@
         <img src="favicon.svg" alt="KVS Logo" class="logo-img" />
         <span>KVS · Portfolio</span>
       </div>
-      <ul class="nav-links">
+      <ul class="nav-links" id="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#education">Education</a></li>
@@ -38,6 +44,9 @@
         <li><a href="#contact">Contact</a></li>
         <li><a href="Venkata_Sudeep_Resume.pdf" target="_blank" class="nav-resume">My Resume ↗</a></li>
       </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </nav>
   </header>
 
@@ -340,14 +349,25 @@
         Open to entry-level Software Developer roles. If you'd like to connect
         or have a project in mind, reach out.
       </p>
-      <a href="mailto:venkata.sudeep.k@gmail.com" class="btn btn-white">
-        <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <rect width="20" height="16" x="2" y="4" rx="2" />
-          <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-        </svg>
-        venkata.sudeep.k@gmail.com
-      </a>
+      <div class="contact-cta">
+        <a href="mailto:venkata.sudeep.k@gmail.com" class="btn btn-white">
+          <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect width="20" height="16" x="2" y="4" rx="2" />
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+          </svg>
+          venkata.sudeep.k@gmail.com
+        </a>
+        <button class="copy-email-btn" id="copy-email-btn" type="button" data-email="venkata.sudeep.k@gmail.com"
+          aria-label="Copy email address">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect width="13" height="13" x="9" y="9" rx="2" />
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+          </svg>
+          <span class="copy-email-tooltip">Copy email</span>
+        </button>
+      </div>
       <div class="contact-links">
         <a href="https://x.com/Sudeep__22" target="_blank" class="contact-link">
           <svg class="contact-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
@@ -378,6 +398,14 @@
   <footer class="foot">
     <p class="foot-copy">&copy; 2025 K Venkata Sudeep — All rights reserved</p>
   </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+      stroke-linecap="round" stroke-linejoin="round">
+      <path d="m18 15-6-6-6 6" />
+    </svg>
+  </button>
 
   <script src="script.js"></script>
 </body>
