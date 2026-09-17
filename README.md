@@ -60,13 +60,15 @@ npx serve .
 
 ## 📄 Sections
 
-| Section    | What it covers                                   |
-|------------|---------------------------------------------------|
-| Home       | Intro, role, and quick call-to-action buttons      |
-| About      | Background and summary                             |
-| Education  | Academic history                                    |
-| Projects   | Featured work                                       |
-| Contact    | Ways to get in touch                                 |
+| Section         | What it covers                                       |
+|-----------------|------------------------------------------------------|
+| Home            | Intro, role, and quick call-to-action buttons        |
+| About           | Background and summary                               |
+| Technical Stack | Technologies, programming languages, and dev tools   |
+| Education       | Academic history                                     |
+| Certifications  | Licenses and completed credentials                   |
+| Projects        | Featured work                                        |
+| Contact         | Ways to get in touch                                 |
 
 ## 👤 About Me
 
