@@ -100,7 +100,7 @@ ul {
   z-index: 1;
   pointer-events: none;
   display: block;
-  opacity: 0.75;
+  opacity: 0.5;
 }
 
 @media (max-width: 600px) {
@@ -464,6 +464,7 @@ nav.container {
 .hero-inner {
   position: relative;
   padding: 6rem 0 4rem;
+  margin-top: -2rem;
 }
 
 .hero-eyebrow {
@@ -477,6 +478,8 @@ nav.container {
   align-items: center;
   gap: 0.6rem;
   background: var(--cyan-dim);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(56, 189, 248, 0.25);
   padding: 0.35rem 0.9rem;
   border-radius: 30px;
