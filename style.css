@@ -87,6 +87,28 @@ ul {
   list-style: none;
 }
 
+/* ── INTERACTIVE NETWORK BACKGROUND (canvas) ── */
+.bg-network {
+  position: fixed;
+  inset: 0;
+  /* Sections like #home paint their own near-opaque background and sit
+     in the same default paint layer as z-index:0 — since they come later
+     in the document, they'd cover a z-index:0 canvas. Explicit z-index:1
+     lifts the canvas above every section background; it still stays
+     under real content (.container etc.), which is also z-index:1 but
+     appears later in the DOM, so it wins the paint order. */
+  z-index: 1;
+  pointer-events: none;
+  display: block;
+  opacity: 0.75;
+}
+
+@media (max-width: 600px) {
+  .bg-network {
+    opacity: 0.45;
+  }
+}
+
 /* ── AMBIENT CYBER BACKGROUND GLOWS ── */
 .bg-glow-container {
   position: fixed;
@@ -1377,6 +1399,10 @@ nav.container {
   }
 
   .cursor-glow {
+    display: none;
+  }
+
+  .bg-network {
     display: none;
   }
 }
