@@ -1,6 +1,6 @@
 # K Venkata Sudeep — Portfolio
 
-A personal portfolio website built with plain HTML, CSS, and JavaScript — featuring a dark "cyber/neon" theme with an interactive, mouse-reactive particle network background.
+My personal portfolio website built with plain HTML, CSS, and JavaScript — featuring a dark "cyber/neon" theme with an interactive, mouse-reactive particle network background.
 
 **Live site:** [sudeep0105.github.io/portfolio](https://sudeep0105.github.io/portfolio/)
 
