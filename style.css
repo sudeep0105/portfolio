@@ -469,7 +469,7 @@ nav.container {
 
 .hero-eyebrow {
   font-family: var(--mono);
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--cyan-bright);
@@ -477,6 +477,12 @@ nav.container {
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
+  background: var(--cyan-dim);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  padding: 0.35rem 0.9rem;
+  border-radius: 30px;
   opacity: 0;
   animation: rise 0.7s 0.2s ease forwards;
 }
