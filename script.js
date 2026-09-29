@@ -19,6 +19,11 @@ document.querySelectorAll('.section').forEach((section) => {
   revealObserver.observe(section);
 });
 
+const currentYearElement = document.getElementById('current-year');
+if (currentYearElement) {
+  currentYearElement.textContent = String(new Date().getFullYear());
+}
+
 
 /* ── 2. SMOOTH SCROLL ──────────────────────────────────────── */
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
