@@ -118,7 +118,7 @@ setTimeout(typeRole, 800);
 
 
 /* ── 6. INTERACTIVE CARD MOUSE LIGHTING + 3D TILT EFFECT ───── */
-const cards = document.querySelectorAll('.skill-card, .project-card, .cert-card, .about-content');
+const cards = document.querySelectorAll('.skill-card, .about-content');
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 cards.forEach((card) => {
