@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-  <meta name="google-site-verification" content="O1NEJhpKPQaf6vvMOjjCdphAXIR11xqT6vHMzvzZ1fw" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>K Venkata Sudeep — Full Stack Java Developer</title>
@@ -15,6 +14,7 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 
 <body>
   <!-- Scroll progress indicator -->
@@ -258,41 +258,44 @@
       <p class="sec-label">05 — Projects</p>
       <h2 class="sec-title">Featured Work</h2>
 
-      <!-- CASE STUDY 1: NETFLIX CLONE -->
+      <!-- CASE STUDY 1: JOBTRACK -->
       <div class="project-card" style="margin-bottom: 3rem;">
         <div class="proj-tags">
+          <span class="proj-tag">Job Application Management</span>
           <span class="proj-tag">Full-Stack Development</span>
-          <span class="proj-tag">Enterprise Architecture</span>
         </div>
-        <h3 class="proj-title">Full-Stack Netflix Clone Web Application</h3>
+        <h3 class="proj-title">JobTrack — Job Application Tracker</h3>
         <div class="proj-body">
           <div>
             <p class="proj-section-head">The Challenge</p>
             <p class="proj-text">
-              Architecting a high-fidelity media streaming platform mock capable of managing asynchronous global state
-              transformations, handling real-time third-party REST metadata pipelines, and establishing secure database
-              connectivity streams.
+              Keeping track of job applications, interviews, company details, and follow-ups across different places
+              can quickly become difficult. JobTrack brings everything together in one dashboard so users can organize
+              applications and monitor their job-search progress.
             </p>
             <p class="proj-section-head">Technical Approach</p>
             <p class="proj-text">
-              Engineered a modular, decoupled architecture pairing a high-speed <strong>React (Vite)</strong> frontend
-              interface with a robust <strong>Java Spring Boot REST API</strong> backend. Implemented data persistence
-              using <strong>Spring Data JPA &amp; Hibernate</strong> over a MySQL database, enforced data validation
-              through Jakarta parameters, and configured tailored CORS security channels. Sourced live high-resolution
-              assets smoothly via asynchronous fetch protocols.
+              Built a responsive <strong>React (Vite)</strong> frontend and <strong>Java Spring Boot REST API</strong>.
+              Secured registration and login with <strong>JWT authentication</strong> and
+              <strong>BCrypt password hashing</strong>. Used <strong>Spring Data JPA</strong> and
+              <strong>MySQL</strong> to store accounts and applications while keeping each user's data private.
+              Users can create, view, edit, delete, search, filter, and sort applications, with dashboard summaries
+              showing application progress.
             </p>
           </div>
           <div>
             <div class="proj-sidebar-card">
               <h4>Tech Stack</h4>
               <div class="tech-list">
-                <div class="tech-item">React.js / Vite</div>
-                <div class="tech-item">Spring Boot / Java</div>
-                <div class="tech-item">Hibernate / JPA</div>
-                <div class="tech-item">MySQL Relational DB</div>
+                <div class="tech-item">React / Vite</div>
+                <div class="tech-item">Java / Spring Boot</div>
+                <div class="tech-item">Spring Security / JWT</div>
+                <div class="tech-item">Spring Data JPA</div>
+                <div class="tech-item">MySQL</div>
               </div>
             </div>
-            <a href="https://github.com/sudeep0105/netflix-clone.git" target="_blank" class="btn btn-dark btn-full">
+            <a href="https://github.com/sudeep0105/Job-Application-Tracker.git" target="_blank" rel="noopener noreferrer"
+              class="btn btn-dark btn-full">
               View Source Code ↗
             </a>
           </div>
